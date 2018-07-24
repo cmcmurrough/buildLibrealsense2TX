@@ -74,7 +74,7 @@ fi
 
 if [ $JETSON_BOARD == "TX1" ] ; then 
  L4TTarget="28.2"
- if [ $JETSON_L4T = "28.2" ] ; then
+ if [ $JETSON_L4T = "28.2" ] || [ $JETSON_L4T = "28.2.0" ] ; then
      KERNEL_BUILD_VERSION=v1.0-L4T28.2
   else
    echo ""
